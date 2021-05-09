@@ -9,7 +9,7 @@ const CommentCreate = ({postId}) => {
         e.preventDefault();
         let result = await axios({
             method: 'post',
-            url: `http://localhost:4001/posts/${postId}/comments`,
+            url: `http://posts.com/posts/${postId}/comments`,
             data: {content: content},
         });
         setContent("");

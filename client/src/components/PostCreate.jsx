@@ -9,7 +9,7 @@ const PostCreate = () => {
         e.preventDefault();
         const result = await axios({
             method: 'post',
-            url: 'http://localhost:4000/posts',
+            url: 'http://posts.com/posts/create',
             data: {title},
         })
         console.log(result)
